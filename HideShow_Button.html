@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide_Show Button</title>
+    <style type="text/css">
+
+        button
+        {
+            height: 40px;
+            width: 100px;
+            border-radius: 10px;
+            border: none;
+            background: linear-gradient(45deg,lightcoral,lightcyan,lightblue);
+
+        }
+    </style>
+</head>
+<body>
+
+    <img src="https://www.wallpapers13.com/wp-content/uploads/2016/02/Autumn-river-sky-wooden-bridge-ultra-HD-3840x2160-wallpaper.jpg" id="image" height="400px" width="400px">
+
+    
+   <button onclick="HideShowPara()">Hide/Show</button>
+
+    <script>
+
+        
+
+       function HideShowPara()
+       {
+          var testP =  document.getElementById('image');
+
+         if(testP.style.display === 'block')
+         {
+            testP.style.display = 'none';
+         }
+         else
+         {
+            testP.style.display = 'block';   
+         }
+       }
+      
+    
+    </script>
+    
+</body>
+</html>
