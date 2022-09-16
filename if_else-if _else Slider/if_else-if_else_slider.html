@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<img src="image1.jfif" height="600px" width="100%" id="slider">
+     
+     <script type="text/javascript">
+     
+     function sliding()
+     {
+
+      var image1 = document.getElementById('slider');
+
+			if(image1.src.match("image1.jfif"))
+
+			{
+				image1.src = "image2.jfif";
+			}
+
+			else if(image1.src.match("image2.jfif"))
+			{
+				image1.src = "image3.jfif";
+			}
+
+			else if(image1.src.match("image3.jfif"))
+			 {
+			 	image1.src = "image4.jfif";
+			 }
+
+			 else if(image1.src.match("image4.jfif"))
+			 {
+			 	image1.src = "image5.jfif";
+			 }
+			 else if(image1.src.match("image5.jfif"))
+			 {
+			 	image1.src = "image6.jfif";
+			 }
+			 else if(image1.src.match("image6.jfif"))
+			 {
+			 	image1.src = "image7.jfif";
+			 }
+			 else
+			 {
+                image1.src = "image1.jfif";			 	
+			 }
+
+
+			 setTimeout("sliding()",500);
+		}
+           sliding()
+
+     </script>
+
+</body>
+</html>
