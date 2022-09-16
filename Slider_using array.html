@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body
+		{
+			margin: 0;
+			background: black;
+		}
+		img
+		{
+			margin: 5px auto;
+			border: none;
+		}
+	</style>
+</head>
+<body>
+
+	<img src="https://tse3.mm.bing.net/th?id=OIP.eOd2oysQ8QBzahzVFm7uwQHaFJ&pid=Api&P=0" height="650px" width="70%" class="img">
+	<img src="https://tse3.mm.bing.net/th?id=OIP.i5FkDMX1XhnJ5Eqs6eypeAHaEK&pid=Api&P=0" height="650px" width="70%" class="img">
+	<img src="https://tse1.mm.bing.net/th?id=OIP.z6pGwFhPvV4_Yn2ruRtQTwHaEK&pid=Api&P=0" height="650px" width="70%" class="img">
+	<img src="https://tse1.mm.bing.net/th?id=OIP.Z1JYXd9_T7AvCea1EHRg2wHaE9&pid=Api&P=0" height="650px" width="70%" class="img">
+	<img src="https://tse4.mm.bing.net/th?id=OIP.U7l1Vcqw2WsIOGrxNU51KQHaEo&pid=Api&P=0" height="650px" width="70%" class="img">
+	<img src="https://tse3.mm.bing.net/th?id=OIP.Rw7tFX09TEBTHrbg_44aKQHaEK&pid=Api&P=0" height="650px" width="70%" class="img">
+	<img src="https://tse3.mm.bing.net/th?id=OIP.ob54ErdI5cfX5aAvOxMUvwHaFj&pid=Api&P=0" height="650px" width="70%" class="img">
+
+	<script type="text/javascript">
+     
+        x = 0;
+
+		function slider()
+		{
+
+		  var sliding_image = document.getElementsByClassName('img');
+         
+          for(i=0;i<7;i++)
+          {
+          	sliding_image[i].style.display = "none";
+          }
+
+          sliding_image[x].style.display = "block";
+          
+          x++;
+
+          if(x>=7)
+          {
+          	x = 0;
+          }
+
+          setTimeout("slider()",2000);
+
+    	}
+    	slider()
+	</script>
+
+</body>
+</html>
