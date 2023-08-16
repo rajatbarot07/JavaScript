@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Javascript Methods</h1>
+</body>
+
+</html>
+
+<script>
+
+    //#################### To string method: GIVES US FULL STRING OF VALUES 
+
+    // let bikes = ['yamaha', 'bajaj', 'honda', 'tvs'];
+
+    // let toString = bikes.toString();
+
+    // console.log(toString);
+
+    //##################### join method  : same as to string
+
+    // let join = bikes.join();
+
+    // console.log(join);
+
+    // #################pop method : remove last element from array
+
+    // let pop = bikes.pop();
+
+    // console.log(pop);
+    // console.log(bikes);
+
+    // ####################push => add elements in the last of an array
+
+    // let push = bikes.push('bullet');
+
+    // console.log(push)
+    // console.log(bikes);
+
+    //################## shift => remove elements from the first
+
+    // let shift = bikes.shift();
+
+    // console.log(shift);
+    // console.log(bikes);
+
+    //################unshift => add elements from the starting
+
+    // let unshift = bikes.unshift('pulsar');
+
+    // console.log(bikes);
+
+    //###############Delete => delete element but leaves an holes in array
+
+    // let fruits = ['banana', 'apple', 'grapes'];
+
+    // delete fruits[1];
+
+    // console.log(fruits);
+
+    //############ Concat => joins two or more arrays 
+
+    // let arr1 = [1, 2, 3, 4];
+    // let arr2 = [5, 6, 7];
+    // let arr3 = [8, 9, 10];
+
+    // let newArray = arr1.concat(arr2, arr3);
+
+    // console.log(newArray);
+
+    // let array = [99, 33, 43, 12, 7];
+
+    //  array.sort((b ,a) => a - b ); // sort in decending order
+
+    // array.sort((a, b) => a - b); // sort in accending order
+
+    // console.log(array);
+
+
+    //########## splice ==> add or remove elements in array 
+
+    // ex => fruits.splice(index ,howmany,item1,...itemx )
+
+    //index ==> form where to remove or add
+
+    // how many ==> how many elements you want to remove
+
+    // items ==> elements
+
+    // const fruits = ['banana', 'mango', 'apple', 'kiwi', 'guvava', 'watermelon'];
+
+    // fruits.splice(2, 0, 'berry', 'orange');
+
+    // console.log(fruits);
+
+    // ######## slice ==>  return new array 
+
+    // slice take two parameters ==> (whereto,howmany)
+
+    // where to ==> from where to start elements
+
+    // howmany ==> how many elements you want to get 
+
+    // const fruits = ['banana', 'mango', 'apple', 'kiwi', 'guvava', 'watermelon'];
+
+    // const newFruits =  fruits.slice(2,5);
+
+    // console.log(newFruits);
+
+    // ################# reverse ==> reverse the array
+
+    // let bikes = ['yamaha', 'bajaj', 'honda', 'tvs'];
+
+    // bikes.reverse();
+
+    // console.log(bikes);
+
+    // ######### isArray ==>  that will check it's array or not and returns boolean value
+ 
+    // let arr = [1,2,3,4,5,6]
+    // let string = "dev Vasita"
+
+    // console.log(Array.isArray(arr));
+    // console.log(Array.isArray(string));
+
+    // ########### indexof ==> returns first index of a specified value
+
+    // search from left to right
+
+    // array.indexOf(item,start) ;
+
+    // let bikes = ['yamaha', 'bajaj', 'honda', 'tvs'];
+
+    // console.log(bikes.indexOf('bajaj', 3));
+
+
+    // ############## lastindexOf ==> returns last index of specified value
+
+    // search item from right to left
+
+    // let bikes = ['yamaha', 'bajaj', 'honda', 'tvs'];
+
+    // console.log(bikes.lastIndexOf('tvs',2));
+
+    // ############## find ==> The JavaScript array find() method returns the first element of the given array that satisfies the provided function condition.
+
+    // return first satisfied condition
+
+    // let arr = [1, 22, 33, 44, 55, 66, 77, 88, 99];
+
+    // let newArr = arr.find((element) => element > 44);
+
+    // console.log(newArr);
+
+
+    // ################ findIndex ==> this method retruns the index of the first element in an array that satisfies provide condition
+
+    // const array1 = [5, 12, 8, 44, 48];
+
+    // const newArr = array1.findIndex((element) => element > 20);
+
+    // console.log(newArr); //3  //44
+
+    // becuase it will give first item which index is matching
+
+
+    // ########## includes ==> if contains matching value it will return true or false
+
+    // const str = ['cat', 'dog', 'monkey', 'cow'];
+
+    // console.log(str.includes('cow'&& 'cats'));
+    // console.log(str.includes('cat'));
+
+    // ########### entries ==> returns array iterator with object {key and value }
+
+    // const days = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+
+    // const day = days.entries();
+
+    // for (let x of day) {
+    //     console.log(x + "\n");
+    // }
+
+    // ############### every ==> if all element match the condition than and than only it will give true or give false
+
+    // const arryay1 = [1, 30, 40, 29, 10, 13];
+
+    // const isBelow = arryay1.every((Element) => Element < 40);
+
+    // console.log(isBelow);
+
+
+    // #################### some ==> if one element match the condition form the array than it will give true 
+
+
+    // const arryay1 = [1, 30, 39, 29, 10, 13];
+
+    // const isBelow = arryay1.some((Element) => Element > 40);
+
+    // console.log(isBelow);
+
+
+    //################# fill ==> fills specified elements in an array with a value and overwrites orginal array
+
+    // const fruits = ['banana', 'orange', 'apple', 'mango'];
+    // // fruits.fill('pinapple');
+
+    // fruits.fill('pinapple', 1, 4); //will go up to 4 ==> so change value only on 2 , 3
+
+    // console.log(fruits);
+
+    // ################# forEach ==> provided function once for each array elements ,
+
+    // const numbers = [1, 2, 3, 4, 5];
+
+    // numbers.forEach((element,i) => console.log(element * 10,i*2));
+
+    // console.log(numbers);
+
+    // ############ filter ==> filter method create a new array return elements which are match with conditon
+
+    // const age = [32, 5, 6, 43, 22, 37, 16];
+
+    // const result = age.filter(age => age > 18);
+
+    // console.log(result);
+
+    // ################# Array.from
+
+    const name = "dev Vasita";
+
+    const arr = Array.from(name);
+
+    console.log(arr);
+
+
+
+
+
+
+/* 
+To find the second-to-last maximum number in an array in JavaScript, you can follow these steps:
+
+1. Initialize two variables, `max` and `secondMax`, with the smallest possible values (`-Infinity`).
+2. Iterate through the array using a loop or the `forEach` method.
+3. For each element in the array, compare it with the current `max` and `secondMax` values.
+4. If the element is greater than `max`, update both `max` and `secondMax`. Set `secondMax` to the current `max` value and `max` to the current element.
+5. If the element is less than `max` but greater than `secondMax`, update only `secondMax` to the current element.
+6. After the loop finishes, `secondMax` will contain the second-to-last maximum number in the array.
+
+Here's an example implementation:
+
+```javascript
+function findSecondMax(array) {
+  let max = -Infinity;
+  let secondMax = -Infinity;
+
+  array.forEach(function(element) {
+    if (element > max) {
+      secondMax = max;
+      max = element;
+    } else if (element > secondMax && element < max) {
+      secondMax = element;
+    }
+  });
+
+  return secondMax;
+}
+
+// Example usage:
+const numbers = [5, 10, 2, 8, 15];
+const secondMax = findSecondMax(numbers);
+console.log(secondMax); // Output: 10
+```
+
+In the example above, the `findSecondMax` function takes an array as an argument and returns the second-to-last maximum number in the array. The array `[5, 10, 2, 8, 15]` has `10` as the second-to-last maximum number, which is returned by the function.
+*/
+
+
+
+
+</script>  
+
